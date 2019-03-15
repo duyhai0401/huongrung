@@ -1,14 +1,14 @@
 <?php
 
-class Th_Custom_Categories extends WP_Widget {
+class custom_categories extends WP_Widget {
     
     function __construct() {
         $widget_ops = array( 
-            'classname'                     => 'th_custom_categories',
+            'classname'                     => 'custom_categories',
             'description'                   => __('Display categories with custom view', 'sabino_custom'),
             'customize_selective_refresh'   => true,
         );
-        parent::__construct('th_custom_categories', __('TH: Categories', 'sabino_custom'), $widget_ops);
+        parent::__construct('custom_categories', __('TH: Categories', 'sabino_custom'), $widget_ops);
     }
     
     /**

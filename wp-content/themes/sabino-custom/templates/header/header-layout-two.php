@@ -68,7 +68,7 @@ global $woocommerce; ?>
 			    <?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 		<?php else : ?>
-			<nav id="site-navigation" class="main-navigation">
+			<nav id="site-navigation" class="main-navigation" style="background-color: #02253e;!important">
 				
 				<span class="header-menu-button"><i class="fas fa-bars"></i><span><?php echo esc_attr( get_theme_mod( 'sabino-header-menu-text', 'menu' ) ); ?></span></span>
 				<div id="main-menu" class="main-menu-container">

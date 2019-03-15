@@ -138,7 +138,7 @@ function customizer_library_sabino_options() {
         'id' => 'sabino-unote-header',
         'section' => $section,
         'type'    => 'upsell',
-        'description' => __( '<b>Premium Extra Features:</b><br />- Add/Enable WooCommerce drop down cart<br />- Change Header to a Centered Layout<br />- Remove Phone Number<br />- Remove Social Icons<br />- Remove Search<br />- Remove WooCommerce Cart<br />- Edit Search Input Placeholder Text', 'sabino' )
+        'description' => __( '<b>Premium Extra Features:</b><br />- Add/Enable WooCommerce drop down cart<br />- Change WooCommerce cart icon<br />- Change Header to a Centered Layout<br />- Remove Phone Number<br />- Remove Social Icons<br />- Remove Search<br />- Remove WooCommerce Cart<br />- Edit Search Input Placeholder Text', 'sabino' )
     );
     // ------------------------------------------------------------------------------- Header Layout Settings
     

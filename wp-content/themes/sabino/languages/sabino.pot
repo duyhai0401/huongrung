@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sabino\n"
-"POT-Creation-Date: 2018-12-04 16:56+0200\n"
+"POT-Creation-Date: 2019-03-12 17:55+0200\n"
 "PO-Revision-Date: 2016-11-22 15:17+0200\n"
 "Last-Translator: \n"
 "Language-Team: Kaira\n"
@@ -187,9 +187,10 @@ msgstr ""
 #: customizer/customizer-options.php:141
 msgid ""
 "<b>Premium Extra Features:</b><br />- Add/Enable WooCommerce drop down "
-"cart<br />- Change Header to a Centered Layout<br />- Remove Phone "
-"Number<br />- Remove Social Icons<br />- Remove Search<br />- Remove "
-"WooCommerce Cart<br />- Edit Search Input Placeholder Text"
+"cart<br />- Change WooCommerce cart icon<br />- Change Header to a Centered "
+"Layout<br />- Remove Phone Number<br />- Remove Social Icons<br />- Remove "
+"Search<br />- Remove WooCommerce Cart<br />- Edit Search Input Placeholder "
+"Text"
 msgstr ""
 
 #: customizer/customizer-options.php:148 customizer/customizer-options.php:602

@@ -4,7 +4,7 @@
  *
  * @package Sabino
  */
-define( 'SABINO_THEME_VERSION' , '1.1.15' );
+define( 'SABINO_THEME_VERSION' , '1.1.16' );
 
 // Get help / Premium Page
 require get_template_directory() . '/upgrade/upgrade.php';
@@ -374,19 +374,6 @@ function sabino_register_required_plugins() {
 	tgmpa( $plugins, $config );
 }
 add_action( 'tgmpa_register', 'sabino_register_required_plugins' );
-
-/**
- * Elementor Check
- */
-if ( ! defined( 'ELEMENTOR_PARTNER_ID' ) ) {
-	define( 'ELEMENTOR_PARTNER_ID', 2118 );
-}
-/**
- * WPForms Partner ID
- */
-if ( !defined( 'WPFORMS_SHAREASALE_ID' ) ) {
-    define( 'WPFORMS_SHAREASALE_ID', 1128843 );
-}
 
 /**
  * Register a custom Post Categories ID column

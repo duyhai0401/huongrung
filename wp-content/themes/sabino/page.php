@@ -12,11 +12,7 @@
 
 get_header(); ?>
 
-	<?php if ( is_home() ) : ?>
 	<div id="primary" class="content-area">
-    <?php else : ?>
-    <div id="primary" class="content-area">
-    <?php endif; ?>
 		<main id="main" class="site-main" role="main">
 			
 			<?php if ( !get_theme_mod( 'sabino-remove-page-titles' ) ) : ?>

@@ -52,7 +52,7 @@ global $woocommerce; ?>
 		    </div>
 		</nav><!-- #site-navigation -->
 	<?php else : ?>
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation" style="background-color: #02253e;!important">
 			
 			<div class="site-container">
 				

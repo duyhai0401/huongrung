@@ -4,7 +4,7 @@ Theme URI: https://kairaweb.com/theme/sabino/
 Author: Kaira
 Author URI: https://kairaweb.com/
 Description: Sabino is a creative, elegant multipurpose eCommerce/WooCommerce WordPress theme designed especially for WooCommerce shops, business / restaurants, food critics, restaurant bloggers, health stores, Wellness shops, beauty stores and more. Sabino packs a bunch of customization settings all built neatly within the WordPress Customizer, the Sabino theme is very customizable with lots of settings and comes with 2 header layouts, 4 blog layouts, multiple page templates, 3 footer layouts and WooCommerce shop layout settings, giving you the flexability to customize the Sabino theme to fit your own custom design. Sabino integrates nicely with top WordPress plugins such as WooCommerce, to turn your website into an online e-commerce store. Build any page layouts with the multiple page templates given and the recommended, easy to use, drag and drop Page Builder. Install it now and start building your site without any coding knowledge. Give it a go... Hope you like it!
-Version: 1.1.15
+Version: 1.1.16
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sabino
@@ -875,7 +875,7 @@ a:active {
 .woocommerce-page #container,
 .content-area {
   width: 75%;
-  float: right;
+  float: left;
   padding: 30px 2% 30px 0;
   position: relative;
   box-shadow: -1px 0 0 rgba(0, 0, 0, 0.08) inset;
@@ -884,7 +884,7 @@ a:active {
 .widget-area {
   width: 25%;
   float: left;
-  padding: 35px 2%;
+  padding: 35px 0 40px 2%;
   box-shadow: -1px 0 0 rgba(0, 0, 0, 0.08);
 }
 .home .widget-area {
@@ -1076,7 +1076,6 @@ h3.entry-title {
 }
 .site-branding-img {
   padding: 0;
-  margin: 20px;
 }
 .site-branding a {
     display: block;
@@ -2265,6 +2264,9 @@ object {
     .site-header-layout-two .header-menu-button {
         padding: 48px 0 60px 80px;
     }
+    .site-header-layout-two.site-header-centered-layout .header-menu-button {
+        padding: 6px 25px 23px;
+    }
     
     .main-navigation #main-menu {
         color: #FFFFFF;
@@ -2370,7 +2372,7 @@ object {
     
     .content-layout-blocks .sabino-blog-breakup .post-loop-thumbnail {
         position: relative !important;
-        height: 400px !important;
+        /* height: 400px !important; */
     }
     .content-layout-blocks .sabino-blog-breakup .post-loop-content {
         margin: 0 !important;
@@ -2388,19 +2390,20 @@ object {
     .woocommerce #container,
     .woocommerce-page #container,
     .content-area {
-        box-shadow: none;
-        width: 100%;
-        float: none;
-        padding: 25px 0 30px;
+        box-shadow: none !important;
+        width: 100% !important;
+        float: none !important;
+        padding: 25px 0 30px !important;
     }
     .content-layout-blocks.content-joined-widgets .content-area,
     .content-layout-blocks.content-joined-widgets #container,
     .content-layout-blocks.content-broken-widgets .content-area,
     .content-layout-blocks.content-broken-widgets #container {
-        box-shadow: none;
-        width: 100%;
+        box-shadow: none !important;
+        width: 100% !important;
         float: none !important;
-        padding: 25px 20px 30px;
+        padding: 25px 20px 30px !important;
+        margin: 0 0 10px !important;
     }
     .content-layout-blocks .site-container-main {
         padding: 0 20px;
@@ -2410,25 +2413,29 @@ object {
     .widget-area,
     .content-layout-blocks.content-broken-widgets .widget-area {
         box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.08);
-        width: 100%;
-        float: none;
-        padding: 0 0 5px !important;
-        margin: 0 0 10px;
+        width: 100% !important;
+        float: none !important;
+        padding: 25px 20px 30px !important;
+        margin: 0 0 10px !important;
     }
     .page-template-template-left-sidebar-php .content-area {
-        box-shadow: none;
-        width: 100%;
-        float: none;
-        padding: 25px 0 30px;
+        box-shadow: none !important;
+        width: 100% !important;
+        float: none !important;
+        padding: 25px 0 30px !important;
     }
-    .page-template-template-left-sidebar-php .widget-area,
+    .page-template-template-left-sidebar-php .widget-area {
+        box-shadow: none !important;
+        width: 100% !important;
+        float: none !important;
+        padding: 25px 20px 30px !important;
+        margin: 0 0 10px !important;
+    }
+    .page-template-default .content-layout-blocks.content-broken-widgets .widget-area,
     .page-template-template-left-sidebar-php .content-layout-blocks.content-broken-widgets .widget-area {
-        box-shadow: none;
-        width: 100%;
-        float: none;
-        padding: 0 0 5px;
-        margin: 0 0 10px;
+        padding: 25px 0 30px !important;
     }
+    
     
     /*--------------------------------------------------------------
     Header One Styling

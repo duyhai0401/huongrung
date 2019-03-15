@@ -77,6 +77,13 @@ View the theme settings under "Appearance" -> Customize.
 
 == Changelog ==
 
+#### 1.1.16
+* Fix centered header two responsive on tablet
+* Remove old unused code
+* Fix sidebar on mobile styling issue
+* Updated the language.pot file
+Premium: Added setting to change WooCommerce header shopping cart icon
+
 #### 1.1.15
 * Fix menu bug on Safari
 * Latest changes below - v1.1.14

@@ -30,6 +30,19 @@ global $woocommerce; ?>
 				
 				<?php wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'container_class' => 'sabino-header-nav', 'fallback_cb' => false, 'depth'  => 1 ) ); ?>
 				
+				<?php if ( sabino_is_woocommerce_activated() ) : ?>
+					<div class="header-cart">
+			            <a class="header-cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'sabino' ); ?>">
+				            <span class="header-cart-amount">
+				                <?php echo sprintf( _n( '%d', '%d', WC()->cart->get_cart_contents_count(), 'sabino' ), WC()->cart->get_cart_contents_count() ); ?><span> - <?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span>
+				            </span>
+				            <span class="header-cart-checkout <?php echo ( WC()->cart->get_cart_contents_count() > 0 ) ? sanitize_html_class( 'cart-has-items' ) : ''; ?>">
+				                <i class="fas fa-shopping-cart"></i>
+				            </span>
+				        </a>
+					</div>
+				<?php endif; ?>
+				
 				<div class="site-header-social">
 					<?php get_template_part( '/templates/social-links' ); ?>
 				
@@ -52,7 +65,7 @@ global $woocommerce; ?>
 		    </div>
 		</nav><!-- #site-navigation -->
 	<?php else : ?>
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation" style="background-color: #02253e;!important">
 			
 			<div class="site-container">
 				

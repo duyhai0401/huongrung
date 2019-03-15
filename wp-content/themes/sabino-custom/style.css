@@ -845,6 +845,8 @@ a:active {
 
 .widget-area .widget {
   margin: 0 0 25px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px 5% 30px 5%;
 }
 
 .widget-area .widget:last-child {
@@ -910,9 +912,10 @@ a:active {
 .woocommerce #container,
 .woocommerce-page #container,
 .content-area {
+  background-color: rgba(255, 255, 255, 0.9);
   width: 75%;
   float: right;
-  padding: 30px 2% 30px 0;
+  padding: 30px 2% 30px 2%;
   position: relative;
   box-shadow: -1px 0 0 rgba(0, 0, 0, 0.08) inset;
 }
@@ -982,7 +985,7 @@ a:active {
 }
 
 .content-layout-joined .site-container-main {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: transparent;
 }
 
 .content-layout-blocks .site-container-main {
@@ -3157,4 +3160,17 @@ a:hover {
 body {
   margin: 0px;
   padding: 0px;
+}
+
+
+/* Recent Post custom */
+
+.widget-area .widget.recent_posts_custom ul li {
+  border-bottom: solid #000 1px;
+}
+
+.widget-area .widget.recent_posts_custom ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 6px 0;
 }
